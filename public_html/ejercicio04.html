@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function sustituye() {
+                var fecha = new Date();
+                var diaHoy = fecha.getDay();
+                var diaSemana;
+                
+                switch(diaHoy) {
+                    case 0 : diaSemana = "Domingo"; break;
+                    case 1 : diaSemana = "Lunes"; break;
+                    case 2 : diaSemana = "Martes"; break;
+                    case 3 : diaSemana = "Miercoles"; break;
+                    case 4 : diaSemana = "Jueves"; break;
+                    case 5 : diaSemana = "Viernes"; break;
+                    case 6 : diaSemana = "Sabado"; break;
+                    default : "Es otro dia"; break;
+                }
+                document.getElementById("cabecera").innerHTML = diaSemana;
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airsoft</title>
+    </head>
+    <body>
+        <div>
+            <input type="submit" value="Cambiar Cabecera" name="btn1" onclick="sustituye();"/>
+            <h1 id="cabecera">Hola</h1>
+        </div>
+    </body>
+</html>

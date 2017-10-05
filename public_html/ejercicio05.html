@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function ejemploFor() {
+              for(var i = 0; i < 20; i++)
+              {
+                  document.write(i + " ");
+              }
+              
+              for(var i = 1; i < 7; i++)
+              {
+                  document.write("<h" + i + "> Esto es una cabecera de nivel "+i+"</h"+i+"> ");
+              }
+              
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airsoft</title>
+    </head>
+    <body>
+        <div>
+            <input type="submit" value="Poner Número" name="btn1" onclick="ejemploFor();"/>
+        </div>
+    </body>
+</html>
